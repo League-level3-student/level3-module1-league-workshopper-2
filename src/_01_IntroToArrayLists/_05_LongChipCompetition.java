@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class _05_LongChipCompetition {
 	/**
@@ -13,12 +14,18 @@ public class _05_LongChipCompetition {
 	 * initialize The Beatles before you start your search. *
 	 **/
 	private ArrayList<Beatle> theBeatles = new ArrayList<Beatle>();
-
+	
 	public static void main(String[] args) {
 		_05_LongChipCompetition lcc = new _05_LongChipCompetition();
-		
+		lcc.initializeBeatles();
+		lcc.FindLongestChip();
 	}
-	
+	public void FindLongestChip(){
+		for (int i = 0; i < theBeatles.size(); i++) {
+			Beatle b = theBeatles.get(i);
+			
+		}
+	}
 	private void initializeBeatles() {
 		Beatle george = new Beatle("George");
 		Beatle john = new Beatle("John");
